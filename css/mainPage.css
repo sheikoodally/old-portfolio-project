@@ -1,0 +1,356 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* for the whole page */
+.container 
+	{	
+	box-sizing: border-box;
+  	width: 80%;
+	height: 100%;
+	min-height:100%;
+	position: relative;
+  	margin-right: auto;
+  	margin-left: auto;
+	background-image: url(../background.jpg);
+	background-size: cover;
+	}
+nav
+{
+	position: absolute;
+}
+
+
+header
+{
+	height: 50px;
+	width: 100%;
+	background-color: #ffcc99;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	position: fixed;
+	width:80%;
+	top: 0px;
+	z-index: 1;
+	}
+
+
+li {
+    float: left;
+	border-right: 1px solid #bbb;
+	}
+
+li:last-child{
+	border-right: none;
+	}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	}
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #111;
+}
+
+
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+		
+/*CSS for slideshow starts here */
+
+.slideshow
+{
+	background-color: azure;
+	height: 300px;
+	width:100%;
+}
+
+		
+.mySlides
+	{
+		width: 100%;
+		height:  inherit;
+	}
+		
+.projectSection
+	{
+		height: 800px;
+	}
+	
+/*CSS for projects section starts here*/
+	
+.row{
+	height: 300px;
+	width: 100%;
+	display: block;
+}
+
+.row1{
+	height: 300px;
+	width: 100%;
+	display: block;
+}
+
+.left , .middle , .right
+{
+	background-color: #FFDEAD;
+	width: 25%;
+	float: left;
+	margin-right: 50px;
+	padding: 5px;
+	margin-top: 15px;
+	border: 1px solid black; 
+	display: inline-block;
+	opacity:0.7;
+	font-size: 17px;
+	transition:0.9s ease;
+	color: black;
+			
+}
+		
+		
+/*For the project selection*/
+		
+.left:hover, .middle:hover, .right:hover
+{
+	background-color: beige;
+	opacity:1.0;
+	-webkit-transform: scale(1.175);
+    -ms-transform: scale(1.175);
+   	transform: scale(1.175);
+			
+}
+
+.firstProjectImg
+{
+	height: 130px; 
+	width: 170px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	display: block;
+}
+
+
+
+
+		
+footer
+{
+	position: absolute;
+	width: 100%;
+	line-height: 40px;
+	text-align: center; 
+	background-color: #f9d272; 
+	height: 80px;
+   	bottom: 0;
+   	
+}
+
+footer h4
+{
+	font-size: 16px;
+}
+	
+
+
+/*CSS for mobile*/
+
+@media screen and (max-width: 925px) {
+	
+	.row{
+		height: 600px; 
+	}
+	
+	.projectSection
+	{
+		height: 950px;
+	}
+	
+	main{
+	height: 1500px;
+}
+}
+
+
+@media screen and (max-width: 479px) {
+	
+main{
+	height: 1000px;
+}
+/* start of phone styles */
+	.container{
+		
+	box-sizing: border-box;
+  	width: 80%;
+	height: 100%;
+	min-height:100%;
+	position: relative;
+  	margin-right: auto;
+  	margin-left: auto;
+	background-image: url(../background.jpg);
+	background-size: cover;
+	}
+	
+	nav{
+		position: relative;
+		height: 80px;
+			
+	}
+	
+	header
+{
+	font-size: 13px;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	background-color: #ffcc99;
+}
+	
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	position: absolute;
+	width:100%;
+	top: 0px;
+	}
+
+
+li {
+    float: none;
+	border-bottom: 1px solid #bbb;
+	}
+
+li:last-child{
+	border-bottom: none;
+	}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 9px;
+    text-decoration: none;
+	}
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #111;
+}
+
+
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+		
+/*CSS for slideshow starts here */
+
+.slideshow
+{
+	background-color: azure;
+	height: 150px;
+	width:100%;
+}
+	
+	hr{
+		width:100%;
+		margin-top: 100px;
+	}
+
+.row{
+	height:300px;
+	display: block;
+}
+.projectSection
+{
+	height:750px;
+}
+	
+		
+.mySlides
+{
+	width: 100%;
+	height:  inherit;
+}
+	
+		
+		
+/*CSS for projects section starts here*/
+		
+.left , .middle , .right
+{
+	background-color: #FFDEAD;
+	height: 150px;
+	float: left;
+	width: 30%;
+	font-size: 12px;
+	margin-right: 25px;
+	padding: 5px;
+	margin-top: 10px;
+	border: 1px solid black; 
+	display: inline-block;
+	opacity:0.7;
+	transition:0.9s ease;
+	color: black;
+			
+}
+		
+		
+/*For the project selection*/
+		
+.left:hover, .middle:hover, .right:hover
+{
+	background-color: beige;
+	opacity:1.0;
+	-webkit-transform: scale(1);
+    -ms-transform: scale(1);
+   	transform: scale(1);
+			
+}
+
+.firstProjectImg
+{
+    display:none;
+}
+		
+footer
+{
+	position:absolute;
+	line-height: 20px;
+	width: 100%;
+	font-size: 15px;
+	text-align: center; 
+	height: 80px;
+   	bottom: 0;  	
+}
+	
+	
+	
+	
+}

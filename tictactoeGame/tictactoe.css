@@ -1,0 +1,166 @@
+
+/* for the whole page */
+.container 
+	{	
+	box-sizing: border-box;
+  	width: 80%;
+	height: 100%;
+	min-height:100%;
+	position: relative;
+  	margin-right: auto;
+  	margin-left: auto;
+	background-image: url(../background.jpg);
+	background-size: cover;
+	}
+nav
+{
+	position: absolute;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	position: fixed;
+	width:80%;
+	top: 0px;
+	z-index: 1;
+	}
+
+
+li {
+    float: left;
+	border-right: 1px solid #bbb;
+	}
+
+li:last-child{
+	border-right: none;
+	}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	}
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #111;
+}
+
+/*Main starts here*/
+main{
+	height: 1700px;
+}
+
+.content > img{
+	height: 550px;
+	width: 65%;
+	display: block;
+	padding-bottom: 20px;
+}
+
+#gameImg{
+	height: 350px;
+	width: 25%;
+}
+
+
+footer
+{
+	position: absolute;
+	width: 100%;
+	line-height: 40px;
+	text-align: center; 
+	background-color: #f9d272; 
+	height: 80px;
+   	bottom: 0;
+   	
+}
+
+footer h4
+{
+	font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+	
+main{
+	height: 1550px;
+}
+	
+.content > img{
+	width: 75%;	
+}
+	
+#gameImg{
+	width: 45%;
+	height: 300px;
+}
+}
+
+
+
+@media screen and (max-width: 479px) {
+	
+	
+main{
+	height:620px;
+}
+/* start of phone styles */
+	nav{
+		position: relative;
+		height: 80px;
+			
+	}
+	
+
+ul {
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	}
+
+
+li {
+    float: none;
+	}
+
+li:last-child{
+	border-bottom: none;
+	}
+
+li a {
+    padding: 7px 9px;
+	}
+	
+/*Content starts here*/
+.content > img{
+	display: none;
+}
+
+#gameImg{
+	display: block;
+	height: 350px;
+	width: 95%;
+}
+
+	
+footer
+{
+	width: 100%;
+	line-height: 20px;
+	font-size: 13px;
+	position: absolute;
+	bottom: 0;
+}
+	
+	
+}
